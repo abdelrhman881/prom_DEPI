@@ -6,6 +6,9 @@ global:
   external_labels:
     monitor: 'codelab-monitor'
 
+rule_files:
+  - "alerting.rules.yaml"
+
 alerting:
        alertmanagers:
         - static_configs:

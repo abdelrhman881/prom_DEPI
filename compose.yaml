@@ -6,6 +6,7 @@ services:
       - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./alerting.rules.yaml:/etc/promethes/alerting.rules.yaml
 
   alert-manager:
     container_name: alert-manager
@@ -14,3 +15,4 @@ services:
       - "9093:9093"
     volumes:
       - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml
+      - ./.telegram_bot_token:/etc/alertmanager/.telegram_bot_token
