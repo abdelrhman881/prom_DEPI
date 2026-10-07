@@ -1,0 +1,16 @@
+services:
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus:v3.15.0
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  alert-manager:
+    container_name: alert-manager
+    image: prom/alertmanager:v0.34.1
+    ports:
+      - "9093:9093"
+    volumes:
+      - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml
