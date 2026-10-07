@@ -8,5 +8,5 @@ receivers:
   - name: 'telegram-bot'
     telegram_configs:
       - bot_token_file: /etc/alertmanager/.telegram_token
-        chat_id: 8713948400
+        chat_id: 1418150212
         message: Server is down
