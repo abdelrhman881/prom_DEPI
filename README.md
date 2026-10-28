@@ -172,16 +172,6 @@ Grafana credentials depend on your configuration.
 - Restrict access using firewall rules, authentication, and secure network configurations.
 - Use HTTPS and appropriate access controls for production deployments.
 
-## What I Learned
-
-- Configuring Prometheus scrape jobs and monitoring targets
-- Writing Prometheus alerting rules
-- Integrating Prometheus with Alertmanager
-- Sending automated Telegram notifications
-- Visualizing metrics with Grafana
-- Managing containerized services with Docker Compose
-- Troubleshooting monitoring targets and notification delivery
-- Managing configuration files and protecting sensitive credentials
 
 ## Future Improvements
 
